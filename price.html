@@ -3,131 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página en Construcción</title>
+    <title>Centinela - En Construcción</title>
     <style>
-        /* Reset general */
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-
-        /* Estilos básicos del body */
-        body, html {
-            height: 100%;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: url('https://images.unsplash.com/photo-1525439591392-ec6728e06a30') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .header {
+            background-color: #231054;
             color: #fff;
-        }
-
-        /* Fondo oscuro con transparencia */
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(35, 16, 84, 0.8); /* Color #231054 con opacidad */
-            z-index: 1;
-        }
-
-        /* Contenedor principal */
-        .container {
-            z-index: 2;
+            padding: 10px;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
-            width: 100%;
         }
-
-        h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: #fff;
-            margin-bottom: 20px;
+        .logo img {
+            max-width: 100px;
         }
-
-        p {
-            font-size: 1.3rem;
-            line-height: 1.6;
-            color: #ddd;
-            margin-bottom: 30px;
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
         }
-
-        /* Botón personalizado */
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: #fff;
-            background-color: #ff6f61;
-            border: none;
-            border-radius: 50px;
+        .nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .nav a {
             text-decoration: none;
-            transition: background-color 0.3s ease;
-            margin: 10px;
+            color: #fff;
+            font-weight: bold;
         }
-
+        .construction {
+            text-align: center;
+            padding: 50px;
+        }
+        .construction-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: #231054;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
         .btn:hover {
-            background-color: #e55a50;
+            background-color: #555;
         }
-
-        /* Icono de construcción */
-        #construction-icon {
-            width: 90px;
-            height: 90px;
-            margin-bottom: 30px;
-            background-image: url('https://cdn-icons-png.flaticon.com/512/190/190411.png');
-            background-size: cover;
-            animation: pulse 2s infinite;
+        .footer {
+            background-color: #231054;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
-
-        /* Animación de latido */
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-        }
-
-        /* Ajustes para pantallas móviles */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            .btn {
-                padding: 12px 25px;
-                font-size: 1rem;
-            }
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
+    <header class="header">
+        <div class="logo">
+            <img src="./img/banner-centinela.jpeg" alt="Logo de Centinela">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="team.html">Nuestro Equipo</a></li>
+                <li><a href="service.html">Servicios</a></li>
+                <li><a href="testimonial.html">Testimonios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Overlay para dar color con transparencia -->
-    <div class="overlay"></div>
+    <section class="construction">
+        <div class="construction-content">
+            <h1>¡Estamos trabajando en ello!</h1>
+            <p>Esta sección de nuestra página web está en construcción.</p>
+            <p>Nuestro equipo de Centinela está dedicado a brindarte la mejor experiencia posible.</p>
+            <p>Por favor, no seas ansioso. Volveremos pronto con una sección mejorada.</p>
+            <a href="index.html" class="btn">Ir al Inicio</a>
+        </div>
+    </section>
 
-    <div class="container">
-        <div id="construction-icon"></div>
-        <h1>¡Página en construcción!</h1>
-        <p>Estamos trabajando para ofrecerte la mejor experiencia. Muy pronto podrás ver nuestros precios y servicios. Mientras tanto, puedes <a href="contact.html" style="color: #ff6f61; text-decoration: none;">contactarnos</a>.</p>
-        <a href="index.html" class="btn">Volver al Inicio</a>
-    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Centinela 2024. Todos los derechos reservados.</p>
+            <!-- Puedes agregar más elementos o enlaces aquí -->
+        </div>
+    </footer>
 
+    <script>
+        const btnIrAlInicio = document.querySelector('.btn');
+
+        btnIrAlInicio.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
