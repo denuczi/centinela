@@ -37,6 +37,17 @@
     height: 100vh;
     border: none;
 }
+	/* Oculta el contenedor por defecto */
+.container-iframe {
+    display: none;
+}
+
+/* Muestra el contenedor solo en modo escritorio */
+@media (min-width: 768px) { /* o 1024px, dependiendo del breakpoint que desees */
+    .container-iframe {
+    display: block;
+}
+}
 
 .container-iframe {
     position: relative;
@@ -229,6 +240,15 @@
 </head>
 
 <body>
+	<div class="container-iframe">
+        <iframe src="./inicio slider/index.html" 
+                frameborder="0" 
+                scrolling="no" 
+                allowfullscreen 
+                sandbox="allow-scripts">
+        </iframe>
+    </div>
+	
     <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
     <a href="index.html">
